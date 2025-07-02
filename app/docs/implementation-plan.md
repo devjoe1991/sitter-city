@@ -24,7 +24,7 @@
   - **Notes from Cursor:**
 - [x] **P0-T4:** Set up Shadcn/UI and create a basic layout component.
   - **Notes from Cursor:** Initialized shadcn/ui and created the main Layout component.
-- [ ] **P0-T5:** Initialize Git repository, create `main` branch, and push initial project.
+- [x] **P0-T5:** Initialize Git repository, create `main` branch, and push initial project.
   - **Notes from Cursor:**
 - [ ] **P0-T6:** Create initial database schema in Supabase for `profiles`, `roles`, and `bookings` tables.
   - **Notes from Cursor:**
