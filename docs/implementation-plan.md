@@ -33,17 +33,21 @@
 **Objective:** Build the primary marketing landing page and reusable UI components to attract and inform new users.
 **Notes:** This is the first impression of our brand. Focus on a clean, premium, and trustworthy design.
 
-- [ ] **P1-T1:** Build a responsive Navbar component with the Sitter City logo and links for "For Parents," "For Nannies," "Log In," and a "Sign Up" button.
+- [x] **P1-T0:** Build the landing page hero section.
+  - **Notes from Cursor:** Built the main hero section for the landing page with headline, sub-headline, and CTA button.
+- [ ] **P1-T1:** Build the user/nanny registration (sign-up) page and form.
   - **Notes from Cursor:**
-- [ ] **P1-T2:** Build the "Hero" section for the main page (`app/page.tsx`) with a compelling headline (e.g., "London's Most Trusted Nannies, On Demand"), a sub-headline, and a primary call-to-action (CTA) button like "Find Your Nanny".
+- [ ] **P1-T2:** Implement sign-up logic using Supabase Auth client.
   - **Notes from Cursor:**
-- [ ] **P1-T3:** Build the "How It Works" section, detailing a simple 3-step process (e.g., 1. Search, 2. Book, 3. Relax) with icons and brief descriptions.
+- [ ] **P1-T3:** Build the user/nanny login page and form.
   - **Notes from Cursor:**
-- [ ] **P1-T4:** Build the "Why Choose Us" features section, highlighting key differentiators like "Elite Vetting," "Seamless Booking," and "Cashless Payments."
+- [ ] **P1-T4:** Implement login logic and session management using Supabase Auth.
   - **Notes from Cursor:**
-- [ ] **P1-T5:** Build a simple, elegant Footer component with links to key pages, social media icons, and copyright information.
+- [ ] **P1-T5:** Create a basic profile page where users can view/edit their own data.
   - **Notes from Cursor:**
-- [ ] **P1-T6:** Assemble all created sections onto the main page (`app/page.tsx`) and ensure the layout is responsive and visually appealing.
+- [ ] **P1-T6:** Implement RLS policy on the `profiles` table to ensure users can only access their own profile.
+  - **Notes from Cursor:**
+- [ ] **P1-T7:** Build out the nanny-specific profile fields (e.g., bio, experience, hourly rate).
   - **Notes from Cursor:**
 
 ## Phase 2: Authentication & User Profiles
@@ -52,7 +56,7 @@
 
 - [ ] **P2-T1:** Build the user/nanny registration (sign-up) page and form.
   - **Notes from Cursor:**
-- [ ] **P2-T2:** Implement sign-up logic using Supabase Auth client.
+- [x] **P2-T2:** Implement sign-up logic using Supabase Auth client.
   - **Notes from Cursor:**
 - [ ] **P2-T3:** Build the user/nanny login page and form.
   - **Notes from Cursor:**
