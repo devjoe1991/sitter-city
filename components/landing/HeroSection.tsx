@@ -1,35 +1,22 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import SearchSection from './SearchSection';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[600px] w-full">
-      {/* Background Image */}
+    <section className="relative bg-[#FFF0F5] py-32 md:py-40">
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/hero-background.jpeg)' }}
-      />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
-
-      {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-        <div className="flex flex-col items-center gap-6">
-          <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-            Your Trusted Nanny,
-            <br />
-            Right at Your Hotel
-          </h1>
-          <p className="max-w-2xl text-lg text-slate-200">
-            For international professionals and traveling families. We provide elite,
-            vetted nannies directly to your hotel or residence in London.
-          </p>
-          <div className="mt-4">
-            <Link href="/search">
-              <Button size="lg">Arrange Your Childcare</Button>
-            </Link>
-          </div>
-        </div>
+        className="absolute inset-0 bg-cover bg-center opacity-40"
+        style={{ backgroundImage: "url('/hero-background.jpeg')" }}
+      ></div>
+      <div className="container relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-8 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-6xl">
+          London's Most Trusted Nannies,
+          <br />
+          On Demand
+        </h1>
+        <p className="max-w-2xl text-lg text-muted-foreground">
+          Elite, vetted nannies for busy professionals and traveling families staying in London hotels. Book instantly with confidence.
+        </p>
+        <SearchSection />
       </div>
     </section>
   );

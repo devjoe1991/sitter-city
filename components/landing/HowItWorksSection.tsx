@@ -1,48 +1,51 @@
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Search, CalendarCheck, Coffee } from 'lucide-react';
 
 const HowItWorksSection = () => {
   const steps = [
     {
-      icon: <Search className="h-10 w-10 text-primary" />,
-      title: '1. Tell Us Your Location',
+      icon: <Search className="h-8 w-8 text-primary" />,
+      title: 'Search for a Nanny',
       description:
         'Enter your hotel or residence and the hours you need. Find elite nannies available for your stay.',
+      bgColor: 'bg-secondary', // Mint cream
     },
     {
-      icon: <CalendarCheck className="h-10 w-10 text-primary" />,
-      title: '2. Book from Anywhere',
+      icon: <CalendarCheck className="h-8 w-8 text-primary" />,
+      title: 'Book from Anywhere',
       description:
         'Select your preferred nanny and book instantly via our secure platform—even before you land in London.',
+      bgColor: 'bg-blue-100', // A light blue accent
     },
     {
-      icon: <Coffee className="h-10 w-10 text-primary" />,
-      title: '3. Enjoy Your Trip',
+      icon: <Coffee className="h-8 w-8 text-primary" />,
+      title: 'Enjoy Your Trip',
       description:
         'Focus on your work or enjoy the city, knowing your children are in safe, professional hands right at your hotel.',
+      bgColor: 'bg-yellow-100', // A light yellow accent
     },
   ];
 
   return (
-    <section className="bg-muted py-16 md:py-24">
-      <div className="container max-w-6xl">
+    <section className="bg-muted/50 py-16 md:py-24">
+      <div className="container mx-auto max-w-6xl">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Childcare in 3 Simple Steps
+            Getting Started is Easy
           </h2>
-          <p className="mt-4 text-lg text-foreground/80">
-            Designed for the modern, traveling family.
-          </p>
         </div>
 
-        <div className="grid gap-12 md:grid-cols-3">
-          {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-background">
-                {step.icon}
-              </div>
-              <h3 className="mb-2 text-xl font-bold">{step.title}</h3>
-              <p className="text-foreground/80">{step.description}</p>
-            </div>
+        <div className="grid gap-8 md:grid-cols-3">
+          {steps.map((step) => (
+            <Card key={step.title} className={`${step.bgColor} border-0 shadow-lg`}>
+              <CardHeader>
+                <div className="mb-4">{step.icon}</div>
+                <CardTitle>{step.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{step.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
