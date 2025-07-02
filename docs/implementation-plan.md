@@ -33,21 +33,23 @@
 **Objective:** Build the primary marketing landing page and reusable UI components to attract and inform new users.
 **Notes:** This is the first impression of our brand. Focus on a clean, premium, and trustworthy design.
 
-- [x] **P1-T0:** Build the landing page hero section.
+- [x] **P1-T1:** Build a responsive Navbar component.
+  - **Notes from Cursor:** Created responsive Navbar with a mobile hamburger menu and integrated it into the main layout.
+- [x] **P1-T2:** Build the "Hero" section for the main page.
   - **Notes from Cursor:** Built the main hero section for the landing page with headline, sub-headline, and CTA button.
-- [ ] **P1-T1:** Build the user/nanny registration (sign-up) page and form.
+- [ ] **P1-T3:** Build the user/nanny registration (sign-up) page and form.
   - **Notes from Cursor:**
-- [ ] **P1-T2:** Implement sign-up logic using Supabase Auth client.
+- [ ] **P1-T4:** Implement sign-up logic using Supabase Auth client.
   - **Notes from Cursor:**
-- [ ] **P1-T3:** Build the user/nanny login page and form.
+- [ ] **P1-T5:** Build the user/nanny login page and form.
   - **Notes from Cursor:**
-- [ ] **P1-T4:** Implement login logic and session management using Supabase Auth.
+- [ ] **P1-T6:** Implement login logic and session management using Supabase Auth.
   - **Notes from Cursor:**
-- [ ] **P1-T5:** Create a basic profile page where users can view/edit their own data.
+- [ ] **P1-T7:** Create a basic profile page where users can view/edit their own data.
   - **Notes from Cursor:**
-- [ ] **P1-T6:** Implement RLS policy on the `profiles` table to ensure users can only access their own profile.
+- [ ] **P1-T8:** Implement RLS policy on the `profiles` table to ensure users can only access their own profile.
   - **Notes from Cursor:**
-- [ ] **P1-T7:** Build out the nanny-specific profile fields (e.g., bio, experience, hourly rate).
+- [ ] **P1-T9:** Build out the nanny-specific profile fields (e.g., bio, experience, hourly rate).
   - **Notes from Cursor:**
 
 ## Phase 2: Authentication & User Profiles
@@ -56,7 +58,7 @@
 
 - [ ] **P2-T1:** Build the user/nanny registration (sign-up) page and form.
   - **Notes from Cursor:**
-- [x] **P2-T2:** Implement sign-up logic using Supabase Auth client.
+- [ ] **P2-T2:** Implement sign-up logic using Supabase Auth client.
   - **Notes from Cursor:**
 - [ ] **P2-T3:** Build the user/nanny login page and form.
   - **Notes from Cursor:**
